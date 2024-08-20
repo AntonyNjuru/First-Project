@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.logo h1{
+    letter-spacing: 3px;
+}
+
+nav{
+    z-index: 100000;
+}
+
+nav ul li a{
+    font-size: 25px;
+    transition: color .3s text-decoration .3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color: #ccc;
+    text-decoration: underline;
+}
+
+#hero{
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(assets/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100vh;
+}
+
+/* media query */
+@media (max-width:600px){
+    #list{
+        position: absolute;
+        background: #000000d9;
+        flex-direction: column;
+        left: 5%;
+        right: 5%;
+        top: 25%;
+        transform: translate(0%, -25%);
+        z-index: 10000;
+        padding: 20px 0;
+        border-radius: 10px;
+
+        display: none;
+    }
+
+    #list li a{
+        color: white;
+    }
+}
